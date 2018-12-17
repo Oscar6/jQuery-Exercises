@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <a href="#" id="anchorTag"> This is an anchor tag</a>
+  <!-- <div class="divClass"></div> -->
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script>
+// Code block for jQuery
+    $(function() {
+      // calling anchor tag
+      // $(a)
+
+      // calling anchor tag id
+      // $(anchorTag)
+
+      // using JS and jQuery
+      // let $anchor = $(anchorTag)
+
+      // console.log($anchorTag)
+
+// Creating a Div element
+      let $myDiv = $('<div>', {
+        'class' : 'divClass',
+        'text'  : 'hello world',
+        'style' : 'background-color: red; height: 300px; width: 500px'
+      });
+
+      let $b = $('body');
+
+      $b.append($myDiv)
+    })
+
+  </script>
+
+</body>
+</html>
