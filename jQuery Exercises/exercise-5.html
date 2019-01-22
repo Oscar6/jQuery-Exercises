@@ -8,12 +8,27 @@
     /*
     Make it so that when you click on one of the links on this page,
     instead of navigating the browser to that page, it renders that
-    page in the iframe below. Set the iframe's `src` attribute to a URL will cause it to render the page.
+    page in the iframe below. Set the iframe's `src` attribute 
+    to a URL that will cause it to render the page.
     HINT: Lookup .attr()
     */
     $(function() {
       // Write code here
+      var $group = $('ul');
+      var $li = $('li');
+      var $href = $('href');
+      var $iframe = $('iframe');
+
+      $('li').click(function() {
+        $('iframe').attr(
+          {
+          'src': 'http://hellohappy.org',
+          'src': 'http://duckduckgo.com',
+          'src': 'http://css-tricks.com',
+          })
+      })
     });
+    
     </script>
   </head>
   <body>
